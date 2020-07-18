@@ -1,0 +1,28 @@
+<div class="main-body">
+    <table id="transactions-table">
+                <h2 id="table-title1">Transaction Table</h2>
+        <thead>
+            <tr>
+                <th class="tborder">Id</th>
+                <th class="tborder">Bill Info</th>
+                <th class="tborder">Date</th>
+                <th class="tborder">Total</th>
+                <th colspan="2" class="tborder">Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {{#each transactions}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.billinfo}}</td>
+                <td>{{this.date}}</td>
+                <td>{{this.total}}</td>
+                <td><button class="btn-alert">Edit</button></td>
+                <td><button class="btn-danger">Delete</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<script src="/js/transaction.js"></script>

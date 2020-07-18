@@ -1,0 +1,285 @@
+nav
+{
+    background-color: rgb(55, 212, 165);
+    border: solid black;
+
+}
+
+nav>ul
+{
+    list-style-type: none;
+    
+}
+.nav-component
+{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 7px;
+    margin-left: 10px;
+    border: solid #000000;
+}
+.nav-component a
+{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+   
+}
+.nav-component a:visited
+{
+    color: rgb(0, 0, 0);
+}
+.body-section
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid #000000;
+}
+.create-section
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: solid #000000;
+
+}
+.message-section
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px ;
+    margin-right: 0px;
+}
+
+.update-section
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black;
+}
+.form-group
+{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.form-control
+{
+    margin-top:5px;
+    margin-left:10px;
+    height: 4vh;
+    font-size: large;
+    border-radius: 3.5px;
+}
+#update-product
+{
+    margin-top: 10px;
+}
+#product-table
+{
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+#product-table th
+{
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#product-table td
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+#table-title
+{
+    margin-bottom: 0px;
+    font-size: x-large;
+    margin-left: 0px;
+    
+}
+.btn-primary
+{
+    font-size: large;
+    margin-left: 80px;
+    margin-right: 3vw;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.label
+{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+#type-table th
+{
+    padding-left: 3vw;
+}
+#type-table td
+{
+    padding-left: 3vw;
+}
+#type-table
+{
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+.main-body
+{
+    margin-top:5vh;
+    margin-left: 10vw;
+}
+
+.form-column
+{
+    display: inline-block;
+    margin-right: 3vw;
+}
+#bill-table
+{
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+#bill-table th
+{
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#bill-table td
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+#product-section
+{
+    
+    margin-left: 20px;
+}
+.main-body
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black;
+}
+.checkout-section
+{
+    margin-left: 700px;
+}
+.btn-checkout
+{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.tborder
+{
+    border: solid black;
+    text-align: center;
+}
+#bill-table
+{
+    margin-top: 10px;
+    margin-left: 200px;
+    border: solid black;
+    
+}
+#bill-section
+{
+    border: solid black;
+    margin-left: 10px;
+}
+.label1
+{
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:1px;
+}
+.label2
+{
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:1px;
+}
+#table-section
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black;
+    margin-bottom: 10px;
+    
+}
+#type-table
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black;
+    margin-bottom: 10px;
+    
+}
+#type-table th
+{
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#type-table td
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+#transactions-table
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black;
+    margin-bottom: 10px;
+    
+}
+#transactions-table th
+{
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#transactions-table td
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+#bill-table
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black;
+    margin-bottom: 10px;
+    
+}
+#bill-table th
+{
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#bill-table td
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+.bill-section
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid black; 
+    padding-bottom: 10px;
+}

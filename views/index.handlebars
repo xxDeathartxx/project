@@ -1,0 +1,73 @@
+<div class="main-body">
+    <div id="product-section">
+        <form id="billform">
+        <div class="form-column">
+                    <h4 class="label">PRODUCT NAME:</h4>
+        <select onchange="onValueselect()" class="form-control" name="product" id="product">
+            <option value="0">--Select--</option>
+            {{#each products}}
+           
+            <option value="{{this.id}}">{{this.name}}</option>
+            {{/each}}
+       
+        </select>
+        </div>
+    <br>
+        <div class="form-column">
+         <h4 class="label">COST:</h4>
+            <input type="number" name="cost" id="cost" class="form-control" placeholder="Cost" readonly
+        </div>
+        <br>
+        <div class="form-column">
+            <h4 class="label">QUANTITY:</h4>
+            <input type="number" placeholder="Quantity" onchange="setPrice()" class="form-control" name="quantity" id="quantity">
+        </div>
+        <br>
+
+        <div class="form-column">
+           <h4 class="label">PRICE:</h4>
+            <input type="number" placeholder="Price" class="form-control" name="price" id="price" readonly>
+        </div>
+        <br>
+        <div class="form-column">
+            <button class="btnPrimary" id="addbtn">Add</button>
+        
+        </div>
+        <br>
+    </div>
+</form>
+</div>
+
+<div class="bill-section">
+    <table id="bill-table">
+        <caption id="table-title">Bill section</caption>
+        <thead>
+               <tr class="tborder">
+                <th class="tborder">Id</th>
+                <th class="tborder">ProductName</th>
+                <th class="tborder">Quantity</th>
+                <th class="tborder">Cost</th>
+                <th class="tborder">Price</th>
+                <th colspan="2"class="tborder">Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {{#each bills}}
+              <tr>
+                  <td>{{this.id}}</td>
+                  <td>{{this.product_name}}</td>
+                  <td>{{this.quantity}}</td>
+                  <td>{{this.cost}}</td>
+                  <td>{{this.price}}</td>
+                  <td><button class="btnDanger" onclick="delbill({{this.id}})">Delete</button></td>
+              </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class="checkout-section">
+       <button class="btnCheckout" onclick="checkbill()" >Checkout</button>
+    </div>
+</div>
+<script src="/js/index.js"></script>
+ 

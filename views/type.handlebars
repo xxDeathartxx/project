@@ -1,0 +1,68 @@
+<div id="body-section">
+    <div class="message-section">
+        {{#if success_msg}}
+        <span id="message-section">
+            {{this.success_msg}}
+        </span>
+        {{/if}}
+        {{#if error}}
+        <span id="error-section">
+            {{this.error}}
+        </span>
+        {{/if}}
+    </div>
+    <div class="create-section">
+        <form action="/type/add" method="post">
+         <div class="form-group">
+             <h2 class="label2">TO CREATE TYPE</h2>
+             <hr>
+             <h3 class="label2">NAME:</h3>
+             <input type="text" name="name" id="" placeholder="Name" class="form-control">
+         </div>
+         <div class="form-group">
+             <button type="submit" class="btn-primary">Create</button>
+         </div>
+        </form>
+    </div>
+    <div class="update-section">
+        <form  id="update-type">
+            <div class="form-group">
+                <h2 class="label2">TO UPDATE TYPE</h2>
+                <hr>
+                <h3 class="label2">ID:</h3>
+                <input type="number" name="updateid" id="updateTid" class="form-control" placeholder="update_id">
+            </div>
+            <div class="form-group">
+                               <h3 class="label2">NAME:</h3>
+                <input type="text" name="updatename" id="updateTname" class="form-control" placeholder="update_name">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="table-section">
+    <table id="type-table">
+                <h2 id="table-title1">Type Table</h2>
+        <thead>
+            <tr>
+<th class="tborder">Id</th>
+                <th class="tborder">Name</th>
+                <th colspan="2" class="tborder">Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {{#each types}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.name}}</td>
+                <td><button class="btn-alert" onclick="tedit({{this.id}})">Edit</button></td>
+                <td><button class="btn-danger" onclick="delType({{this.id}})">Delete</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<script src="js/type.js"></script>
